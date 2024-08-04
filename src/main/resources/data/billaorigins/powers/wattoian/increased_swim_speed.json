@@ -1,0 +1,9 @@
+{
+  "type": "origins:attribute",
+  "modifier": {
+    "name": "Swim speed increase",
+    "attribute": "forge:swim_speed",
+    "value": 0.25,
+    "operation": "addition"
+  }
+}

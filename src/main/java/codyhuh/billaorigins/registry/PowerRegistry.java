@@ -1,7 +1,9 @@
 package codyhuh.billaorigins.registry;
 
 import codyhuh.billaorigins.BillaOrigins;
-import codyhuh.billaorigins.content.power.SinkBoatPower;
+import codyhuh.billaorigins.content.power.wattoian.FreezeResistancePower;
+import codyhuh.billaorigins.content.power.wattoian.MountDeathPower;
+import codyhuh.billaorigins.content.power.wattoian.SinkBoatPower;
 import io.github.edwinmindcraft.apoli.api.power.factory.PowerFactory;
 import io.github.edwinmindcraft.origins.common.registry.OriginRegisters;
 import net.minecraftforge.registries.DeferredRegister;
@@ -11,4 +13,6 @@ public class PowerRegistry {
     public static final DeferredRegister<PowerFactory<?>> POWERS = DeferredRegister.create(OriginRegisters.POWER_FACTORIES.getRegistryName(), BillaOrigins.MOD_ID);
 
     public static final RegistryObject<SinkBoatPower> SINK_BOAT_POWER = POWERS.register("sink_boat", SinkBoatPower::new);
+    public static final RegistryObject<MountDeathPower> KILL_MOUNT_POWER = POWERS.register("kill_mount", MountDeathPower::new);
+    public static final RegistryObject<FreezeResistancePower> FREEZE_RESISTANCE = POWERS.register("freeze_resistance", FreezeResistancePower::new);
 }
