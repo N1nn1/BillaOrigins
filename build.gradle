@@ -2,6 +2,7 @@ plugins {
     id 'eclipse'
     id 'idea'
     id 'net.minecraftforge.gradle' version '[6.0.16,6.2)'
+    id 'org.spongepowered.mixin' version '0.7.+'
 }
 
 group = mod_group_id
@@ -131,6 +132,7 @@ dependencies {
     implementation fg.deobf("io.github.edwinmindcraft:calio-forge:1.20.1-1.11.0.5")
     implementation fg.deobf("io.github.edwinmindcraft:apoli-forge:1.20.1-2.9.0.8")
     implementation fg.deobf("io.github.edwinmindcraft:origins-forge:1.20.1-1.10.0.9")
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
     implementation fg.deobf("curse.maven:caelus-308989:5281700")
 }
